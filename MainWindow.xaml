@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Background="Aqua" Width="120" Height="40" Click="showMessageBox">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Column="0" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center">Hi</Label>
+        
+        <Button Grid.Column="1" Background="Aqua" Width="120" Height="40" Click="showMessageBox">
             Click Me
         </Button>
     </Grid>
