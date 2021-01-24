@@ -23,5 +23,9 @@ namespace Demo
         public MainWindow() {
             InitializeComponent();
         }
+
+        private void showMessageBox(object sender, RoutedEventArgs e) {
+            MessageBox.Show("Hello Sama!");
+        }
     }
 }
